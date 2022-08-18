@@ -32,6 +32,9 @@
       "main"
     ]
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/clarkio/modern-npm-package.git"
@@ -49,7 +52,6 @@
     "example",
     "demonstration"
   ],
-  "private": "false",
   "author": "clarkio",
   "license": "MIT",
   "bugs": {
