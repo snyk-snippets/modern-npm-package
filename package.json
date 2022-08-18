@@ -49,6 +49,7 @@
     "example",
     "demonstration"
   ],
+  "private": "false",
   "author": "clarkio",
   "license": "MIT",
   "bugs": {
