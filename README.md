@@ -13,7 +13,7 @@ An npm package for demonstration purposes using TypeScript to build for both the
 
 ### Testing
 
-1. `npm i -D mocha @type/mocha chai @types/chai ts-node`
+1. Install developer dependencies using the following command in your terminal `npm i -D mocha @type/mocha chai @types/chai ts-node`
 1. Create a new file `.mocharc.json` in the root directory with the following contents:
    ```json
    {
