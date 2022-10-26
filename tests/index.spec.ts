@@ -1,8 +1,8 @@
 import 'mocha';
 import { assert } from 'chai';
 
-import { helloWorld, goodBye } from '../index';
-import npmPackage from '../index';
+import { helloWorld, goodBye } from '../src/index';
+import npmPackage from '../src/index';
 
 describe('NPM Package', () => {
   it('should be an object', () => {
