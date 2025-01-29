@@ -12,12 +12,21 @@
     "clean": "del-cli ./lib",
     "build": "npm run clean && tsc -p ./tsconfig.json",
     "test": "node --experimental-strip-types --test",
-    "semantic-release": "semantic-release --dry-run",
+    "semantic-release": "semantic-release",
     "prepack": "npm run build"
   },
   "release": {
     "branches": [
       "main"
+    ],
+    "dryRun": true,
+    "plugins": [
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ]
     ]
   },
   "publishConfig": {
