@@ -2,6 +2,8 @@
 
 An npm package for demonstration purposes using TypeScript to build for the ECMAScript Module format (i.e. ESM or ES Module). It can be used in Node.js and browser applications.
 
+> If you're reading/coming from the Snyk blog post that discusses both ESM and CommonJS go to the [v2022-2024](https://github.com/snyk-snippets/modern-npm-package/tree/v2022-2024) branch
+
 ## Get Started
 
 1. Run `npm install` in your terminal
