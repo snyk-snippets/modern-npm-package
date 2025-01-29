@@ -1,22 +1,22 @@
-import 'mocha';
-import { assert } from 'chai';
+import { describe, it } from 'node:test';
+import assert from 'node:assert';
 
-import { helloWorld, goodBye } from '../src/index';
-import npmPackage from '../src/index';
+import { helloWorld, goodBye } from '../src/index.ts';
+import npmPackage from '../src/index.ts';
 
 describe('NPM Package', () => {
   it('should be an object', () => {
-    assert.isObject(npmPackage);
+    assert.strictEqual(typeof npmPackage, 'object');
   });
 
   it('should have a helloWorld property', () => {
-    assert.property(npmPackage, 'helloWorld');
+    assert.deepStrictEqual(Object.keys(npmPackage), ['helloWorld', 'goodBye']);
   });
 });
 
 describe('Hello World Function', () => {
   it('should be a function', () => {
-    assert.isFunction(helloWorld);
+    assert.strictEqual(typeof helloWorld, 'function');
   });
 
   it('should return the hello world message', () => {
@@ -28,7 +28,7 @@ describe('Hello World Function', () => {
 
 describe('Goodbye Function', () => {
   it('should be a function', () => {
-    assert.isFunction(goodBye);
+    assert.strictEqual(typeof goodBye, 'function');
   });
 
   it('should return the goodbye message', () => {
